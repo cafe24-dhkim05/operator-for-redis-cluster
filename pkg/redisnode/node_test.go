@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis/fake/admin"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis/fake/admin"
 )
 
 func TestUpdateNodeConfigFile(t *testing.T) {

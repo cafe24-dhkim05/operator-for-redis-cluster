@@ -8,7 +8,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/utils"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils"
 
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 
@@ -24,10 +24,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/record"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
-	"github.com/IBM/operator-for-redis-cluster/pkg/controller/pod"
-	"github.com/IBM/operator-for-redis-cluster/pkg/controller/sanitycheck"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller/pod"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller/sanitycheck"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 const (

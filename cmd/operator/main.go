@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
-	"github.com/IBM/operator-for-redis-cluster/pkg/controller"
-	"github.com/IBM/operator-for-redis-cluster/pkg/garbagecollector"
-	"github.com/IBM/operator-for-redis-cluster/pkg/operator"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/garbagecollector"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/operator"
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"
 	"k8s.io/apimachinery/pkg/runtime"

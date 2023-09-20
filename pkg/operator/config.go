@@ -1,8 +1,8 @@
 package operator
 
 import (
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
 	"github.com/caarlos0/env/v6"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
 	"github.com/spf13/pflag"
 )
 

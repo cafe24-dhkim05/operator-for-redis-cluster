@@ -1,6 +1,6 @@
 package controller
 
-import "github.com/IBM/operator-for-redis-cluster/pkg/config"
+import "github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
 
 // Config contains the Controller settings
 type Config struct {

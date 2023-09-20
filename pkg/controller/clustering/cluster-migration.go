@@ -8,8 +8,8 @@ import (
 
 	"github.com/golang/glog"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 type migrationInfo struct {

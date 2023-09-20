@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 	"github.com/golang/glog"
 )
 

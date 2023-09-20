@@ -9,8 +9,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/errors"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 // FixClusterSplit use to detect and fix a cluster split

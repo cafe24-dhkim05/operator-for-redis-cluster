@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/IBM/operator-for-redis-cluster/internal/testutil"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/internal/testutil"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 func TestReplacePrimaries(t *testing.T) {

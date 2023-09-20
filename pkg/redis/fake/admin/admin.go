@@ -3,8 +3,8 @@ package admin
 import (
 	"context"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 // GetClusterInfoRetType structure to describe the return data of GetClusterInfo method

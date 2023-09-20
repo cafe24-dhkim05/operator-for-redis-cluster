@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
 	corev1 "k8s.io/api/core/v1"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
 
 	"github.com/mediocregopher/radix/v4"
 

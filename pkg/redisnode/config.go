@@ -3,7 +3,7 @@ package redisnode
 import (
 	"time"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
 	"github.com/spf13/pflag"
 )
 

@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis/fake"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis/fake"
 )
 
 func TestFixClusterSplit(t *testing.T) {

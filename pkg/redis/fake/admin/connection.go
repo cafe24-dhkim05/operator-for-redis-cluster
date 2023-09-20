@@ -3,7 +3,7 @@ package admin
 import (
 	"context"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 // Connections fake redis connection handler, do nothing

@@ -3,7 +3,7 @@ package clustering
 import (
 	"fmt"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 // SelectPrimariesToReplace used to replace currentPrimaries with new redis nodes

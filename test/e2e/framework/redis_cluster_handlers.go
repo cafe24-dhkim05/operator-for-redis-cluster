@@ -9,7 +9,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/utils"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils"
 
 	policyv1 "k8s.io/api/policy/v1"
 	"k8s.io/apimachinery/pkg/types"
@@ -19,7 +19,7 @@ import (
 
 	"github.com/onsi/gomega"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

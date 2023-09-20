@@ -9,10 +9,10 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/IBM/operator-for-redis-cluster/internal/testutil"
-	"github.com/IBM/operator-for-redis-cluster/pkg/utils"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/internal/testutil"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
 )
 
 var (

@@ -86,7 +86,7 @@ Docs available [here](kubectl-plugin.md).
 #### Build container images
 
 ```console
-cd $GOPATH/src/github.com/IBM/operator-for-redis-cluster
+cd $GOPATH/src/github.com/cafe24-dhkim05/operator-for-redis-cluster
 make container
 ```
 

@@ -4,12 +4,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/IBM/operator-for-redis-cluster/internal/testutil"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/internal/testutil"
 
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis"
 )
 
 func TestPlacePrimaries(t *testing.T) {

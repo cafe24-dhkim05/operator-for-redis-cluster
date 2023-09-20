@@ -35,9 +35,9 @@ Build the project:
 
 ```console
 $ make build
-CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/IBM/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/IBM/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/IBM/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:33 -s" -o bin/operator ./cmd/operator
-CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/IBM/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/IBM/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/IBM/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:35 -s" -o bin/node ./cmd/node
-CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/IBM/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/IBM/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/IBM/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/IBM/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:37 -s" -o bin/metrics ./cmd/metrics
+CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:33 -s" -o bin/operator ./cmd/operator
+CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:35 -s" -o bin/node ./cmd/node
+CGO_ENABLED=0 go build -installsuffix cgo -ldflags "-w -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.TAG=0.3.4 -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.COMMIT=81c58d3bb6e713679637d9971fc8f795ca5a3e2f -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.REDIS_VERSION= -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.BUILDTIME=2021-10-21/12:44:37 -s" -o bin/metrics ./cmd/metrics
 ```
 
 Run the test suite to make sure everything works:
@@ -45,14 +45,14 @@ Run the test suite to make sure everything works:
 ```console
 $ make test
 ./go.test.sh
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/controller	5.162s	coverage: 33.1% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/controller/clustering	0.711s	coverage: 75.6% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/controller/pod	1.726s	coverage: 40.0% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/controller/sanitycheck	0.631s	coverage: 21.5% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/garbagecollector	1.740s	coverage: 75.0% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/redis	0.728s	coverage: 22.4% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/redis/fake	0.148s	coverage: 85.8% of statements
-ok  	github.com/IBM/operator-for-redis-cluster/pkg/redisnode	1.924s	coverage: 43.4% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller	5.162s	coverage: 33.1% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller/clustering	0.711s	coverage: 75.6% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller/pod	1.726s	coverage: 40.0% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/controller/sanitycheck	0.631s	coverage: 21.5% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/garbagecollector	1.740s	coverage: 75.0% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis	0.728s	coverage: 22.4% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis/fake	0.148s	coverage: 85.8% of statements
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redisnode	1.924s	coverage: 43.4% of statements
 ```
 
 Install the kubectl Redis cluster plugin (more info [here](./kubectl-plugin.md))
@@ -196,5 +196,5 @@ RedisCluster CRUD operations
 Ran 11 of 11 Specs in 517.299 seconds
 SUCCESS! -- 11 Passed | 0 Failed | 0 Pending | 0 Skipped
 PASS
-ok  	github.com/IBM/operator-for-redis-cluster/test/e2e	517.776s
+ok  	github.com/cafe24-dhkim05/operator-for-redis-cluster/test/e2e	517.776s
 ```

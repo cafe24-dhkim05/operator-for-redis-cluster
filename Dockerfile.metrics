@@ -32,9 +32,9 @@ COPY cmd/metrics/main.go ./
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
     go build \
     -ldflags "-w -s \
-      -X github.com/IBM/operator-for-redis-cluster/pkg/utils.BUILDTIME=$BUILDTIME \
-      -X github.com/IBM/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION=$OPERATOR_VERSION \
-      -X github.com/IBM/operator-for-redis-cluster/pkg/utils.REVISION=$REVISION" \
+      -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.BUILDTIME=$BUILDTIME \
+      -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.OPERATOR_VERSION=$OPERATOR_VERSION \
+      -X github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils.REVISION=$REVISION" \
     -a \
     -o metrics \
     .

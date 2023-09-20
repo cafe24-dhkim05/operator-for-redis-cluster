@@ -17,7 +17,7 @@ endif
 TAG?=$(shell git tag|tail -1)
 COMMIT=$(shell git rev-parse HEAD)
 DATE=$(shell date +%Y-%m-%d/%H:%M:%S)
-BUILDINFOPKG=github.com/IBM/operator-for-redis-cluster/pkg/utils
+BUILDINFOPKG=github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils
 LDFLAGS= -ldflags "-w -X ${BUILDINFOPKG}.TAG=${TAG} -X ${BUILDINFOPKG}.COMMIT=${COMMIT} -X ${BUILDINFOPKG}.OPERATOR_VERSION=${OPERATOR_VERSION} -X ${BUILDINFOPKG}.REDIS_VERSION=${REDIS_VERSION} -X ${BUILDINFOPKG}.BUILDTIME=${DATE} -s"
 
 all: build

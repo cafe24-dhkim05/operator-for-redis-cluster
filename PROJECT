@@ -1,6 +1,6 @@
 domain: ibm.com
 layout: go.kubebuilder.io/v3-alpha
-repo: github.com/IBM/operator-for-redis-cluster
+repo: github.com/cafe24-dhkim05/operator-for-redis-cluster
 projectName: operator-for-redis-cluster
 resources:
 - api:
@@ -10,7 +10,7 @@ resources:
   domain: ibm.com
   group: db
   kind: RedisCluster
-  path: github.com/IBM/operator-for-redis-cluster/pkg/api/redis/v1
+  path: github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/api/redis/v1
   version: v1alpha1
 version: "3"
 plugins:

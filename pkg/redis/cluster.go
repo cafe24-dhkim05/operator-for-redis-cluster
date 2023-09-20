@@ -3,7 +3,7 @@ package redis
 import (
 	"sort"
 
-	rapi "github.com/IBM/operator-for-redis-cluster/api/v1alpha1"
+	rapi "github.com/cafe24-dhkim05/operator-for-redis-cluster/api/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 )
 

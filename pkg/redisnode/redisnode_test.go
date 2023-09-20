@@ -12,9 +12,9 @@ import (
 	kmetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kfakeclient "k8s.io/client-go/kubernetes/fake"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/config"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis/fake"
-	"github.com/IBM/operator-for-redis-cluster/pkg/redis/fake/admin"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/config"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis/fake"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redis/fake/admin"
 )
 
 func TestTestAndWaitConnection(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/IBM/operator-for-redis-cluster
+module github.com/cafe24-dhkim05/operator-for-redis-cluster
 
 go 1.19
 

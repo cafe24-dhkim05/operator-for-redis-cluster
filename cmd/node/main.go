@@ -10,8 +10,8 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"
 
-	"github.com/IBM/operator-for-redis-cluster/pkg/redisnode"
-	"github.com/IBM/operator-for-redis-cluster/pkg/utils"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/redisnode"
+	"github.com/cafe24-dhkim05/operator-for-redis-cluster/pkg/utils"
 )
 
 func main() {
