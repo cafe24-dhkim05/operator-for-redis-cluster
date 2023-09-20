@@ -3,9 +3,9 @@ entries:
   node-for-redis:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2023-09-20T11:58:38.94344+09:00"
+    created: "2023-09-20T18:08:21.163038+09:00"
     description: Cluster node for interfacing with Redis
-    digest: 7925609497a385ba7141f70cdae985ae34c28bd64094bbeb83ba837800d9f9ec
+    digest: 4350793b164e75dc61f4d0c2f9198d4ca21cae1a9a4371c45ee57140bd6bd30c
     maintainers:
     - name: tomashibm
     - name: cin
@@ -18,9 +18,9 @@ entries:
     version: 0.0.0
   operator-for-redis:
   - apiVersion: v2
-    created: "2023-09-20T11:58:38.94515+09:00"
+    created: "2023-09-20T18:08:21.164857+09:00"
     description: Operator for creating and managing Redis clusters
-    digest: 44f5bfd1a8700ca3d3584089d04f9793f8900e36e034961d416d74a8a5390c8b
+    digest: fd1610144bae9a44cabffabd56b3a705d24bf8ce30829c1871fa3bbb7242dbcf
     maintainers:
     - name: tomashibm
     - name: cin
@@ -31,4 +31,4 @@ entries:
     urls:
     - operator-for-redis-0.0.0.tgz
     version: 0.0.0
-generated: "2023-09-20T11:58:38.942428+09:00"
+generated: "2023-09-20T18:08:21.161996+09:00"
