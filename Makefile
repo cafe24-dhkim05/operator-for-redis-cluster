@@ -1,7 +1,7 @@
 ARTIFACT_OPERATOR=redis-operator
 ARTIFACT_INITCONTAINER=init-container
 
-PREFIX=ibmcom/
+PREFIX=docker.io/cafe24dhkim05/
 
 SOURCES := $(shell find . ! -name "*_test.go" -name '*.go')
 
