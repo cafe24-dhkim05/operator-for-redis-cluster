@@ -1,7 +1,8 @@
 apiVersion: v2
 name: operator-for-redis
 type: application
-version: 0.0.1  # Overridden by release workflow
+version: 0.0.2  # Overridden by release workflow
+appVersion: 0.0.1  # Overridden by release workflow
 description: Operator for creating and managing Redis clusters
 maintainers:
   - name: tomashibm  # Tomash Sidei

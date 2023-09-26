@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: docker.io/cafe24dhkim05/operator-for-redis
   # Overrides the image tag whose default is the chart appVersion
-  tag: ""
+  tag: "v0.0.1"
   pullPolicy: IfNotPresent
 
 logLevel: 2

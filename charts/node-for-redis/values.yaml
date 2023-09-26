@@ -8,7 +8,7 @@ replicationFactor: 1
 image:
   repository: docker.io/cafe24dhkim05/node-for-redis
   # Overrides the image tag whose default is the chart appVersion
-  tag: ""
+  tag: "v0.0.1"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
