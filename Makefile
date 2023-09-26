@@ -36,6 +36,9 @@ buildlinux-%: ${SOURCES}
 container-%: buildlinux-%
 	docker build -t $(PREFIX)$*-for-redis:$(TAG) -f Dockerfile.$* .
 
+container-arm64-%: buildlinux-%
+	docker buildx build --platform=linux/arm64 -t $(PREFIX)$*-for-redis-arm64:$(TAG) -f Dockerfile.arm64.$* .
+
 build: $(addprefix build-,$(CMDBINS))
 
 buildlinux: $(addprefix buildlinux-,$(CMDBINS))
@@ -71,6 +74,9 @@ test:
 
 push-%: container-%
 	docker push $(PREFIX)$*-for-redis:$(TAG)
+
+push-arm64-%: container-%
+	docker push $(PREFIX)$*-for-redis-arm64:$(TAG)
 
 push: $(addprefix push-,$(CMDBINS))
 
