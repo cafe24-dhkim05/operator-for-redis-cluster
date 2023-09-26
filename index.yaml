@@ -3,7 +3,22 @@ entries:
   node-for-redis:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-26T09:31:46.418382+09:00"
+    created: "2023-09-26T09:41:01.548896+09:00"
+    description: Cluster node for interfacing with Redis
+    digest: c4dd6ea1a71b85a30ebab6b596c568dfeabba3bb28c83f730b89fd45cd797f12
+    maintainers:
+    - name: tomashibm
+    - name: cin
+    - name: antonioua
+    - name: kscharm
+    name: node-for-redis
+    type: application
+    urls:
+    - node-for-redis-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-26T09:41:01.548061+09:00"
     description: Cluster node for interfacing with Redis
     digest: b1468ba358a88b32563ec064da70c567fcc01be2ef0d378adbfa80d7caf22a3d
     maintainers:
@@ -18,7 +33,7 @@ entries:
     version: 0.0.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2023-09-26T09:31:46.417613+09:00"
+    created: "2023-09-26T09:41:01.547202+09:00"
     description: Cluster node for interfacing with Redis
     digest: 4350793b164e75dc61f4d0c2f9198d4ca21cae1a9a4371c45ee57140bd6bd30c
     maintainers:
@@ -33,7 +48,22 @@ entries:
     version: 0.0.0
   operator-for-redis:
   - apiVersion: v2
-    created: "2023-09-26T09:31:46.422117+09:00"
+    appVersion: 0.0.1
+    created: "2023-09-26T09:41:01.554715+09:00"
+    description: Operator for creating and managing Redis clusters
+    digest: 7585f74836b3608c8c5e7e0d849a5eecf60275ae30d38982fabd84c33645ee48
+    maintainers:
+    - name: tomashibm
+    - name: cin
+    - name: antonioua
+    - name: kscharm
+    name: operator-for-redis
+    type: application
+    urls:
+    - operator-for-redis-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    created: "2023-09-26T09:41:01.552977+09:00"
     description: Operator for creating and managing Redis clusters
     digest: 5149da290bf112c1f36e81275edb10889075ee3254a12ab0ab03faf980b2c2df
     maintainers:
@@ -47,7 +77,7 @@ entries:
     - operator-for-redis-0.0.1.tgz
     version: 0.0.1
   - apiVersion: v2
-    created: "2023-09-26T09:31:46.420136+09:00"
+    created: "2023-09-26T09:41:01.550821+09:00"
     description: Operator for creating and managing Redis clusters
     digest: fd1610144bae9a44cabffabd56b3a705d24bf8ce30829c1871fa3bbb7242dbcf
     maintainers:
@@ -60,4 +90,4 @@ entries:
     urls:
     - operator-for-redis-0.0.0.tgz
     version: 0.0.0
-generated: "2023-09-26T09:31:46.416711+09:00"
+generated: "2023-09-26T09:41:01.546194+09:00"
