@@ -6,9 +6,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.6.1
   creationTimestamp: null
-  name: redisclusters.db.ibm.com
+  name: redisclusters.db.cafe24.com
 spec:
-  group: db.ibm.com
+  group: db.cafe24.com
   names:
     kind: RedisCluster
     listKind: RedisClusterList

@@ -16,7 +16,7 @@ limitations under the License.
 
 // Package v1alpha1 contains API Schema definitions for the db v1alpha1 API group
 // +kubebuilder:object:generate=true
-// +groupName=db.ibm.com
+// +groupName=db.cafe24.com
 package v1alpha1
 
 import (
@@ -29,7 +29,7 @@ import (
 )
 
 const (
-	GroupName = "db.ibm.com"
+	GroupName = "db.cafe24.com"
 	// ResourcePlural is the id to identify plural resource
 	ResourcePlural = "redisclusters"
 	// ResourceSingular represents the id for identify singular resource

@@ -1,4 +1,4 @@
-apiVersion: db.ibm.com/v1alpha1
+apiVersion: db.cafe24.com/v1alpha1
 kind: RedisCluster
 metadata:
   name: {{ include "node-for-redis.fullname" . }}

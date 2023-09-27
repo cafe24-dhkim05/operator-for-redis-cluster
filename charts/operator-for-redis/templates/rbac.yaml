@@ -7,7 +7,7 @@ rules:
 - apiGroups: ["apiextensions.k8s.io"]
   resources: ["customresourcedefinitions"]
   verbs: ["*"]
-- apiGroups: ["db.ibm.com"]
+- apiGroups: ["db.cafe24.com"]
   resources: ["redisclusters", "redisclusters/status"]
   verbs: ["*"]
 - apiGroups: ["coordination.k8s.io"]

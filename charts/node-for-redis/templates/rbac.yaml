@@ -7,7 +7,7 @@ rules:
 - apiGroups: [""]
   resources: ["namespaces", "services", "endpoints", "pods", "nodes"]
   verbs: ["list", "get", "watch"]
-- apiGroups: ["db.ibm.com"]
+- apiGroups: ["db.cafe24.com"]
   resources: ["rediscluster","redisclusters"]
   verbs: ["list", "get", "watch"]
 ---
