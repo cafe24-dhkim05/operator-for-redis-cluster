@@ -39,7 +39,7 @@ container-%: buildlinux-%
 load-%: container-%
 	kind load docker-image $(PREFIX)$*-for-redis:$(TAG)
 
-container-arm64-%: buildlinux-%
+arm64-container-%: buildlinux-%
 	docker buildx build --platform=linux/arm64 -t $(PREFIX)$*-for-redis-arm64:$(TAG) -f Dockerfile.arm64.$* .
 
 build: $(addprefix build-,$(CMDBINS))
@@ -50,7 +50,7 @@ container: $(addprefix container-,$(CMDBINS))
 
 load: $(addprefix load-,$(CMDBINS))
 
-container-arm64: $(addprefix container-arm64-,$(CMDBINS))
+arm64-container: $(addprefix arm64-container-,$(CMDBINS))
 
 manifests: controller-gen
 	$(CONTROLLER_GEN) $(CRD_OPTIONS) rbac:roleName=manager-role output:rbac:none paths="./..." output:crd:artifacts:config=charts/operator-for-redis-cluster/crds/
@@ -82,12 +82,12 @@ test:
 push-%: container-%
 	docker push $(PREFIX)$*-for-redis:$(TAG)
 
-push-arm64-%: container-%
+arm64-push-%: arm64-container-%
 	docker push $(PREFIX)$*-for-redis-arm64:$(TAG)
 
 push: $(addprefix push-,$(CMDBINS))
 
-push-arm64: $(addprefix push-arm64-,$(CMDBINS))
+arm64-push: $(addprefix arm64-push-,$(CMDBINS))
 
 clean:
 	rm -f ${ARTIFACT_OPERATOR}
