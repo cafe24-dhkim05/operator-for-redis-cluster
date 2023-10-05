@@ -34,7 +34,7 @@ buildlinux-%: ${SOURCES}
 	CGO_ENABLED=0 GOOS=linux go build -installsuffix cgo ${LDFLAGS} -o docker/$*/$* ./cmd/$*/main.go
 
 container-%: buildlinux-%
-	docker build -t $(PREFIX)$*-for-redis:$(TAG) -f Dockerfile.$* .
+	docker buildx build --platform=linux/amd64 -t $(PREFIX)$*-for-redis:$(TAG) -f Dockerfile.$* .
 
 load-%: container-%
 	kind load docker-image $(PREFIX)$*-for-redis:$(TAG)
